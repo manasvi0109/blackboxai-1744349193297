@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - RideCompare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#14b8a6',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header (Same as index.html) -->
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="/" class="text-2xl font-bold">RideCompare</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-secondary transition">Home</a>
+                <a href="/forum.html" class="hover:text-secondary transition">Forum</a>
+                <a href="/news.html" class="hover:text-secondary transition">Newsroom</a>
+                <div class="relative group">
+                    <button class="hover:text-secondary transition">Offers</button>
+                    <div class="absolute hidden group-hover:block w-48 bg-white text-dark rounded-md shadow-lg mt-2">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Driver Products</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Promotions</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Insurance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="/login.html" class="hover:text-secondary transition">Log In</a>
+                <a href="/signup.html" class="bg-secondary px-4 py-2 rounded-md hover:bg-opacity-90 transition">Sign Up</a>
+            </div>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Forum Section -->
+    <main class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Community Forum</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Forum Topic Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">If you were the new CEO of Uber...</h3>
+                        <p class="text-gray-600 mb-4">What would be the first thing you'd change? Share your thoughts!</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+                <!-- Forum Topic Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">ChatGPT as a co-pilot...</h3>
+                        <p class="text-gray-600 mb-4">Can AI tools like ChatGPT assist drivers effectively?</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+                <!-- Forum Topic Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">NYC Ride Volume - Uber vs Taxis</h3>
+                        <p class="text-gray-600 mb-4">Is it official? More Uber trips being taken than taxis now?</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+                <!-- Forum Topic Card 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">If drivers are really losing money...</h3>
+                        <p class="text-gray-600 mb-4">Why do they keep driving for Uber? Share your insights!</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+                <!-- Forum Topic Card 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">What's a typical passenger rating for Uber?</h3>
+                        <p class="text-gray-600 mb-4">Is a 4.50 rating considered good? Let's discuss!</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+                <!-- Forum Topic Card 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Can I ask my Uber driver to NOT record me?</h3>
+                        <p class="text-gray-600 mb-4">What are your thoughts on privacy in rideshares?</p>
+                        <a href="#" class="text-primary hover:text-secondary">Join the discussion →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About RideCompare</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">How It Works</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Press</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Safety</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-secondary transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-secondary transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-secondary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-secondary transition"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 RideCompare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
